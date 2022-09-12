@@ -67,6 +67,4 @@ app.post('/add',(request,response)=>{
 	users.push(newUser);
 })
 
-app.listen(PORT, () =>
-	console.log(`listening on port ${PORT} for your requests`)
-);
+
