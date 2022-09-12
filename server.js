@@ -6,8 +6,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-
-
+const port = process.env.PORT || 8080;
 
 function deepEqual(object1, object2) {
 	const keys1 = Object.keys(object1);
@@ -67,4 +66,6 @@ app.post('/add',(request,response)=>{
 	users.push(newUser);
 })
 
-
+app.listen(PORT, () =>
+	console.log(`listening on port ${port} for your requests`)
+);
