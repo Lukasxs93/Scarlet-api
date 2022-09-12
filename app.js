@@ -44,7 +44,7 @@ function containsObject(obj, list) {
 }
 
 
-let users = []
+let users = [{email:'luca@erg', password:'ergqrg'}]
 
 // app.get('/users', (request, response) => {
 // 	console.log(request);
