@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const PORT = 8080;
+
 
 function deepEqual(object1, object2) {
 	const keys1 = Object.keys(object1);
